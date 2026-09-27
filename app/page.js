@@ -157,7 +157,7 @@ Your Trusted Technology Partner
             "
           >
             <img
-              src="/home1.png"
+              src="/Home1.png"
               alt="Healthcare professionals working together"
               className="
                 h-[340px]

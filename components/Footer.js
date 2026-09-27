@@ -24,7 +24,7 @@ export default function Footer() {
           <div>
             <Link href="/" className="flex items-center gap-2.5">
               <Image
-                src="/logo.png"
+                src="/logo.jpeg"
                 alt="Elevonix Solutions"
                 width={36}
                 height={36}
