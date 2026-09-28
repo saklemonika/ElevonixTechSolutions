@@ -29,7 +29,7 @@ export default function Navbar() {
   }, [open]);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-line bg-paper/90 backdrop-blur">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-line bg-white">
       <div className="container-x flex h-[80px] items-center justify-between py-3">
         <Link href="/" className="flex items-center gap-2.5 shrink-0">
           <Image
@@ -104,7 +104,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <div
-        className={`md:hidden fixed inset-0 top-[72px] z-40 bg-paper transition-transform duration-300 ease-out ${
+        className={`md:hidden fixed inset-0 top-[80px] z-40 bg-white transition-transform duration-300 ease-out ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >
