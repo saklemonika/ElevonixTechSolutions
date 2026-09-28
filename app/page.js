@@ -1,6 +1,7 @@
 import Link from "next/link";
 import PixelTrail from "@/components/PixelTrail";
 import SectionHeading from "@/components/SectionHeading";
+import TechStack from "@/components/TechStack";
 import {
   ArrowRight,
   CheckCircle2,
@@ -87,7 +88,8 @@ Your Trusted Technology Partner
               CTA BUTTONS
           ====================================================== */}
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row lg:justify-start">
-            <button
+            <Link
+              href="/contact"
               className="
                 group
                 flex
@@ -129,7 +131,7 @@ Your Trusted Technology Partner
               >
                 <ArrowRight size={15} />
               </span>
-            </button>
+            </Link>
 
           
           </div>
@@ -140,98 +142,46 @@ Your Trusted Technology Partner
         
         </div>
 
-        {/* =====================================================
-            RIGHT IMAGE
-        ====================================================== */}
-        <div className="relative mx-auto w-full max-w-[700px] lg:mx-0 lg:max-w-none">
-          {/* image background shape */}
-          <div className="absolute -inset-4 rounded-[40px] bg-gradient-to-br from-[#b9e538]/20 to-cyan-300/10 blur-xl" />
+{/* =====================================================
+    RIGHT IMAGE
+====================================================== */}
+<div className="relative mx-auto w-full max-w-[700px] lg:mx-0 lg:max-w-none">
+  <img
+    src="/Home1.png"
+    alt="Healthcare professionals working together"
+    className="
+      h-[400px]
+      w-full
+      object-contain
+      sm:h-[500px]
+      md:h-[580px]
+      lg:h-[600px]
+      xl:h-[650px]
+    "
+  />
 
-          <div
-            className="
-              relative
-              overflow-hidden
-              rounded-[24px]
-              sm:rounded-[32px]
-              lg:rounded-[38px]
-            "
-          >
-            <img
-              src="/Home1.png"
-              alt="Healthcare professionals working together"
-              className="
-                h-[340px]
-                w-full
-                object-cover
-                sm:h-[450px]
-                md:h-[520px]
-                lg:h-[540px]
-                xl:h-[580px]
-              "
-            />
-
-            {/* dark gradient */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#03284d]/55 via-transparent to-transparent" />
-
-            {/* top floating label */}
-           
-          </div>
-
-          {/* =====================================================
-              FLOATING CARD - LEFT
-          ====================================================== */}
-          <div
-            className="
-              absolute
-              -bottom-7
-              left-3
-              flex
-              items-center
-              gap-3
-              rounded-2xl
-              border
-              border-white/20
-              bg-white
-              px-4
-              py-3
-              text-[#06305a]
-              shadow-[0_20px_50px_rgba(0,0,0,0.18)]
-              sm:left-7
-              sm:px-5
-              sm:py-4
-              lg:-left-8
-            "
-          >
-          </div>
-
-          {/* =====================================================
-              FLOATING CARD - RIGHT
-          ====================================================== */}
-          <div
-            className="
-              absolute
-              -right-2
-              bottom-16
-              hidden
-              rounded-2xl
-              border
-              border-white/15
-              bg-[#b9e538]
-              p-4
-              text-[#06305a]
-              shadow-xl
-              sm:block
-              lg:-right-5
-            "
-          >
-            <p className="text-2xl font-bold">98%</p>
-            <p className="max-w-[110px] text-xs font-medium leading-4">
-              Customer satisfaction
-            </p>
-          </div>
-        </div>
-      </div>
-
+{/* FLOATING CARD - RIGHT */}
+<div
+  className="
+    absolute
+    -right-2
+    bottom-12
+    hidden
+    rounded-xl
+    bg-[#b9e538]
+    p-3
+    text-[#06305a]
+    shadow-xl
+    sm:block
+    lg:-right-5
+  "
+>
+  <p className="text-xl font-bold">98%</p>
+  <p className="max-w-[100px] text-xs font-medium leading-4">
+    Customer satisfaction
+  </p>
+</div></div>
+</div>
       {/* =====================================================
           BOTTOM CURVE
       ====================================================== */}
@@ -523,6 +473,9 @@ Your Trusted Technology Partner
 
   </div>
 </section>
+
+      {/* TECHNOLOGIES (replaces old EXPERTISE grid) */}
+      <TechStack />
 
       {/* WHY / DRIVEN SECTION */}
       <section className="border-y border-line-dark bg-ink py-24 text-white">
