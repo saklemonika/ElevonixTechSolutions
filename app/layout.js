@@ -3,7 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-// Self-hosted variable fonts (no external font requests at build or runtime).
+// Self-hosted variable fonts
 const spaceGrotesk = localFont({
   src: "./fonts/SpaceGrotesk.ttf",
   variable: "--font-space-grotesk",
@@ -29,6 +29,9 @@ export const metadata = {
   title: "Elevonix Solutions | Software & Digital Engineering",
   description:
     "Elevonix Solutions builds web, mobile and AI-driven software for businesses ready to move faster. Product strategy, engineering and support under one roof.",
+  verification: {
+    google: "ebjLZd0Tq9sc8NH7n5FD4SYGjAe7g9IlHtl26wwuiE8",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -39,7 +42,11 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col bg-white text-ink">
         <Navbar />
-        <main className="flex-1 pt-[80px]">{children}</main>
+
+        <main className="flex-1 pt-[80px]">
+          {children}
+        </main>
+
         <Footer />
       </body>
     </html>
