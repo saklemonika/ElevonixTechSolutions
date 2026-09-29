@@ -21,7 +21,7 @@ const inter = localFont({
 const jetbrains = localFont({
   src: "./fonts/JetBrainsMono.ttf",
   variable: "--font-jetbrains",
-  weight: "400 500",
+  weight: "400 520",
   display: "swap",
 });
 
