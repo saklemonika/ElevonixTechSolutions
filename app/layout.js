@@ -26,12 +26,25 @@ const jetbrains = localFont({
 });
 
 export const metadata = {
-  title: "Elevonix Solutions | Software & Digital Engineering",
+  title: "ElevonixTech Solutions | Software & Digital Engineering",
   description:
-    "Elevonix Solutions builds web, mobile and AI-driven software for businesses ready to move faster. Product strategy, engineering and support under one roof.",
-  verification: {
+    "ElevonixTech Solutions builds web, mobile and AI-driven software for businesses ready to move faster. Product strategy, engineering and support under one roof.",
+    verification: {
     google: "ebjLZd0Tq9sc8NH7n5FD4SYGjAe7g9IlHtl26wwuiE8",
   },
+};
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "ElevonixTech Solutions",
+  url: "https://www.elevonixtechsolutions.com/",
+  logo: "https://www.elevonixtechsolutions.com/logo.jpeg",
+  description:
+    "ElevonixTech Solutions builds web, mobile and AI-driven software for businesses.",
+  sameAs: [
+    "https://www.linkedin.com/company/elevonix-solutions/",
+    "https://www.instagram.com/elevonix_tech_solutions/",
+  ],
 };
 
 export default function RootLayout({ children }) {
